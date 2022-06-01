@@ -1,0 +1,51 @@
+.menu {
+    display: flex;
+  
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding-left: 0px;
+    font-size: 20px;
+
+    li {
+      margin: 10px;
+     
+    }
+    a{
+      all: unset;
+      cursor: pointer;
+    }
+    .active{
+        text-decoration: underline black 3px;
+    }
+  }
+  .logo_content {
+    display: flex;
+    justify-content: center;
+    .logo {
+      width: 10%;
+      position: relative;
+      top: 50px;
+    }
+  }
+  .img_Expo {
+    width: 100vw;
+    height: 80vh;
+    background-image: url(../img/chad-montano--GFCYhoRe48-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .img_Expo2{
+    @extend .img_Expo;
+    background-image: url(../img/amirali-mirhashemian-88YAXjnpvrM-unsplash.jpg);
+  }
+  .img_Expo3{
+    @extend .img_Expo;
+    background-image: url(../img/rajat-sarki-bpyldN7rMmI-unsplash.jpg);
+  }
+  .img_Expo4{
+    @extend .img_Expo;
+    background-image: url("https://ecole-du-digital.com/wp-content/uploads/2020/03/accueil-esd-paris.jpg");
+  }

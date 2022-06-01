@@ -1,0 +1,33 @@
+
+$btnBorderRadius:10px;
+$btnColor:rgb(8, 132, 247);
+$btnPadding:5px;
+.Carte{
+    background-color: rgb(227, 224, 224);
+    .burger_Vegan{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        &:hover{
+            filter: grayscale(50%);
+            cursor: pointer;
+        }
+    }
+    
+    button{
+      border-radius: $btnBorderRadius;
+      border: solid $btnColor;
+      color: $btnColor;
+      padding: $btnPadding;
+      background-color: white;
+      width: 150px;
+      margin: 10px;
+    }
+}

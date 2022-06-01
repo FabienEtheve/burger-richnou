@@ -1,0 +1,44 @@
+
+@import "header";
+@import "presentation";
+@import "carte";
+@import "footer";
+
+body,
+html {
+  margin: 0;
+}
+
+$btnBorderRadius:10px;
+$btnColor:rgb(8, 132, 247);
+$btnPadding:5px;
+button{
+  &:hover{
+    background-color: $btnColor;
+    color: white;
+  }
+}
+.btn_savoir{
+  border-radius: $btnBorderRadius;
+  border: solid $btnColor;
+  color: $btnColor;
+  padding: $btnPadding;
+  background-color: white;
+  width: 150px;
+}
+
+.localisation{
+  padding: 15px;
+  border: solid orange;
+  ul{
+    list-style: none;
+    padding: 0;
+  }
+}
+
+
+.formule{
+  display: flex;
+justify-content: space-between;
+}
+
